@@ -40,7 +40,7 @@ export default function Mobile({values, errors, detailsAdded}) {
           </div>
         </div>
       </div>
-      <div className="px-4 sm:px-6 md:px-32 special:px-72  py-8 mt-12 bg-white z-0">
+      <div className="px-4 sm:px-6 md:px-32 special:px-72  py-8 mt-12 bg-white ">
         <Form>
           <CustomForm />
         </Form>
