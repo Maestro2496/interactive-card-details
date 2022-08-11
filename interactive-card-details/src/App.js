@@ -37,30 +37,33 @@ function App() {
       {({values, errors, resetForm}) => {
         return (
           <>
-            <div
-              style={{fontFamily: "Space Grotesk, sans-serif"}}
-              className="hidden  w-full mx-auto h-screen lg:grid grid-rows-1 grid-cols-3 gap-x-0 font-['Space Grotesk', sans-serif]"
-            >
-              <Desktop
-                values={values}
-                errors={errors}
-                detailsAdded={detailsAdded}
-                setDetailsAdded={setDetailsAdded}
-                resetForm={resetForm}
-              />
-            </div>
-            <div
-              style={{fontFamily: "Space Grotesk, sans-serif"}}
-              className="block w-full mx-auto h-screen lg:hidden font-['Space Grotesk', sans-serif]"
-            >
-              <Mobile
-                values={values}
-                errors={errors}
-                detailsAdded={detailsAdded}
-                setDetailsAdded={setDetailsAdded}
-                resetForm={resetForm}
-              />
-            </div>
+            <header role="banner" />
+            <main role="main">
+              <div
+                style={{fontFamily: "Space Grotesk, sans-serif"}}
+                className="hidden  w-full mx-auto h-screen lg:grid grid-rows-1 grid-cols-3 gap-x-0 font-['Space Grotesk', sans-serif]"
+              >
+                <Desktop
+                  values={values}
+                  errors={errors}
+                  detailsAdded={detailsAdded}
+                  setDetailsAdded={setDetailsAdded}
+                  resetForm={resetForm}
+                />
+              </div>
+              <div
+                style={{fontFamily: "Space Grotesk, sans-serif"}}
+                className="block w-full mx-auto h-screen lg:hidden font-['Space Grotesk', sans-serif]"
+              >
+                <Mobile
+                  values={values}
+                  errors={errors}
+                  detailsAdded={detailsAdded}
+                  setDetailsAdded={setDetailsAdded}
+                  resetForm={resetForm}
+                />
+              </div>
+            </main>
           </>
         );
       }}
