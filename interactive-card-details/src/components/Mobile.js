@@ -27,7 +27,7 @@ export default function Mobile({values, errors, detailsAdded, setDetailsAdded, r
             </p>
 
             <div className="text-white mx-6 flex justify-between items-center">
-              <p>{values.cardHolder.length === 0 ? "Eddy Agossou" : values.cardHolder}</p>
+              <p>{values.cardHolder.length === 0 ? "John Doe" : values.cardHolder}</p>
               <p>
                 {monthParser(values.month).length === 0 ? "00" : monthParser(values.month)}/
                 {stringParser(values.year).length === 0 ? "00" : values.year}

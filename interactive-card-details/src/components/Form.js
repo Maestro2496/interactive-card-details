@@ -28,7 +28,7 @@ export default function CustomForm() {
             type="text"
             id="cardNumber"
             name="cardNumber"
-            placeholder="8890 4567 8909 9009"
+            placeholder="0000 0000 0000 0000"
             maxLength="15"
             className="block w-full   rounded-md shadow-sm  sm:text-sm"
           />
