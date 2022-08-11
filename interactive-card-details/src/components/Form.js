@@ -14,7 +14,7 @@ export default function CustomForm() {
             id="cardHolder"
             name="cardHolder"
             maxLength="14"
-            placeholder="Eddy Agossou"
+            placeholder="John Doe"
           />
         </div>
       </div>

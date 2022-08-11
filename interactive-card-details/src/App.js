@@ -51,7 +51,7 @@ function App() {
             </div>
             <div
               style={{fontFamily: "Space Grotesk, sans-serif"}}
-              className=" hidden  xs:block w-full mx-auto h-screen lg:hidden font-['Space Grotesk', sans-serif]"
+              className="block w-full mx-auto h-screen lg:hidden font-['Space Grotesk', sans-serif]"
             >
               <Mobile
                 values={values}
