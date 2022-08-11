@@ -7,7 +7,10 @@ import {parser, stringParser} from "../helpers";
 export default function Desktop({values, errors, detailsAdded, setDetailsAdded, resetForm}) {
   return (
     <>
-      <div className=" w-full h-full row-span-2 col-span-1 bg-cover bg-[url('./assets/bg-main-desktop.png')] flex flex-col items-center justify-center  space-y-6 z-5">
+      <main
+        role="main"
+        className=" w-full h-full row-span-2 col-span-1 bg-cover bg-[url('./assets/bg-main-desktop.png')] flex flex-col items-center justify-center  space-y-6 z-5"
+      >
         <div className="bg-[url('./assets/bg-card-front.png')] bg-contain bg-no-repeat min-w-[400px]  h-60 w-72   z-10 rounded-md -mr-56">
           <div className="mt-6 mx-6 flex space-x-2  justify-start items-center">
             <div className="w-12 h-12 rounded-full bg-white" />
@@ -31,11 +34,13 @@ export default function Desktop({values, errors, detailsAdded, setDetailsAdded, 
         </div>
         <div className=" lg:px-8 bg-contain  bg-no-repeat bg-[url('./assets/bg-card-back.png')] min-w-[400px]  h-60 w-72 -mr-[30rem]  rounded-md">
           <div className=" mt-24 mr-2 flex justify-end">
-            <p className="text-white font-bold">{values.cvc.length === 0 || errors.cvc ? "000" : values.cvc}</p>
+            <p className="text-white font-bold">
+              {values.cvc.length === 0 || errors.cvc ? "000" : values.cvc}
+            </p>
           </div>
         </div>
-      </div>
-      <div className="row-span-1 col-span-2 flex justify-center items-center">
+      </main>
+      <aside className="row-span-1 col-span-2 flex justify-center items-center">
         <div className="w-[35%] px-2 space-y-3 py-4">
           {!detailsAdded ? (
             <Form>
@@ -59,7 +64,7 @@ export default function Desktop({values, errors, detailsAdded, setDetailsAdded, 
             </div>
           )}
         </div>
-      </div>
+      </aside>
     </>
   );
 }

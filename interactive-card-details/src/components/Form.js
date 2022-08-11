@@ -11,7 +11,6 @@ export default function CustomForm() {
           <CustomInput
             className="block w-full  rounded-md shadow-sm  sm:text-sm"
             type="text"
-            id="cardHolder"
             name="cardHolder"
             maxLength="14"
             placeholder="John Doe"
@@ -20,13 +19,12 @@ export default function CustomForm() {
       </div>
 
       <div className="col-span-full">
-        <label htmlFor="name-on-card" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="cardNumber" className="block text-sm font-medium text-gray-700">
           CARD NUMBER
         </label>
         <div className="mt-1">
           <CustomInput
             type="text"
-            id="cardNumber"
             name="cardNumber"
             placeholder="0000 0000 0000 0000"
             maxLength="15"
@@ -69,7 +67,6 @@ export default function CustomForm() {
           <CustomInput
             type="text"
             name="cvc"
-            id="cvc"
             placeholder="eg.123"
             maxLength="3"
             className="block w-full   rounded-md shadow-sm  sm:text-sm"
