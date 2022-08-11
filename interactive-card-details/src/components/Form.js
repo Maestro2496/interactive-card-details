@@ -4,9 +4,7 @@ export default function CustomForm() {
   return (
     <div className="grid grid-cols-12 gap-y-6 gap-x-4">
       <div className="col-span-full  ">
-        <label htmlFor="cardHolder" className="block text-sm font-medium text-gray-700">
-          CARDHOLDER NAME
-        </label>
+        <label className="block text-sm font-medium text-gray-700">CARDHOLDER NAME</label>
         <div className="mt-1">
           <CustomInput
             className="block w-full  rounded-md shadow-sm  sm:text-sm"
@@ -19,9 +17,7 @@ export default function CustomForm() {
       </div>
 
       <div className="col-span-full">
-        <label htmlFor="cardNumber" className="block text-sm font-medium text-gray-700">
-          CARD NUMBER
-        </label>
+        <label className="block text-sm font-medium text-gray-700">CARD NUMBER</label>
         <div className="mt-1">
           <CustomInput
             type="text"
@@ -60,9 +56,7 @@ export default function CustomForm() {
       </div>
 
       <div className="col-span-4 sm:col-span-4">
-        <label htmlFor="cvc" className="block text-sm font-medium text-gray-700">
-          CVC
-        </label>
+        <label className="block text-sm font-medium text-gray-700">CVC</label>
         <div className="mt-1">
           <CustomInput
             type="text"

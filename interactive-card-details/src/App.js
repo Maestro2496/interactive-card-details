@@ -37,8 +37,8 @@ function App() {
       {({values, errors, resetForm}) => {
         return (
           <>
-            <header role="banner" />
-            <main role="main">
+            <header className="sr-only">Interactive card details</header>
+            <main>
               <div
                 style={{fontFamily: "Space Grotesk, sans-serif"}}
                 className="hidden  w-full mx-auto h-screen lg:grid grid-rows-1 grid-cols-3 gap-x-0 font-['Space Grotesk', sans-serif]"

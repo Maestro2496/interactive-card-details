@@ -6,7 +6,8 @@ import {monthParser, parser, stringParser} from "../helpers";
 
 export default function Mobile({values, errors, detailsAdded, setDetailsAdded, resetForm}) {
   return (
-    <section  className="">
+    <section>
+      <h2 className="sr-only">Card details</h2>
       <div className=" flex flex-col w-full items-center justify-start space-y-4 bg-white">
         <div className="first-row h-60 w-full">
           <div className="back-card">

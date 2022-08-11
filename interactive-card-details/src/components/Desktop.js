@@ -8,6 +8,7 @@ export default function Desktop({values, errors, detailsAdded, setDetailsAdded, 
   return (
     <>
       <section className=" w-full h-full row-span-2 col-span-1 bg-cover bg-[url('./assets/bg-main-desktop.png')] flex flex-col items-center justify-center  space-y-6 z-5">
+        <h2 className="sr-only">Card details</h2>
         <div className="bg-[url('./assets/bg-card-front.png')] bg-contain bg-no-repeat min-w-[400px]  h-60 w-72   z-10 rounded-md -mr-56">
           <div className="mt-6 mx-6 flex space-x-2  justify-start items-center">
             <div className="w-12 h-12 rounded-full bg-white" />
