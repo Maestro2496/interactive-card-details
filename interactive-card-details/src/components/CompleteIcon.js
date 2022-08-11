@@ -2,7 +2,7 @@ const CompleteIcon = () => {
   return (
     <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="40" cy="40" r="40" fill="url(#a)" />
-      <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+      <path d="M28 39.92 36.08 48l16-16" stroke="#fff" strokeWidth="3" />
       <defs>
         <linearGradient
           id="a"
@@ -12,8 +12,8 @@ const CompleteIcon = () => {
           y2="91.507"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6348FE" />
-          <stop offset="1" stop-color="#610595" />
+          <stop stopColor="#6348FE" />
+          <stop offset="1" stopColor="#610595" />
         </linearGradient>
       </defs>
     </svg>

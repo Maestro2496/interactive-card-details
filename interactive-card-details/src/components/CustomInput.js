@@ -17,7 +17,9 @@ const CustomInput = ({className, ...props}) => {
             : "border-gray-300 focus:border-indigo-600 focus:ring-indigo-600"
         )}
       />
-      {fieldError ? <div className="text-xs text-red-500 mt-1 h-1">{meta.error}</div> : null}
+      <div className="h-2">
+        {fieldError ? <span className="text-xs text-red-500 mt-1 ">{meta.error}</span> : null}
+      </div>
     </>
   );
 };

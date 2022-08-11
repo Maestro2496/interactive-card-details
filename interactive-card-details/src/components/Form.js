@@ -1,4 +1,4 @@
-import CustomInput from "./Input";
+import CustomInput from "./CustomInput";
 
 export default function CustomForm() {
   return (
@@ -13,6 +13,7 @@ export default function CustomForm() {
             type="text"
             id="cardHolder"
             name="cardHolder"
+            maxLength="14"
             placeholder="Eddy Agossou"
           />
         </div>
@@ -81,7 +82,7 @@ export default function CustomForm() {
           type="submit"
           className="bg-slate-700 text-center w-full p-2 text-white rounded-md hover:bg-slate-900"
         >
-          CONFIRM
+          Confirm
         </button>
       </div>
     </div>
