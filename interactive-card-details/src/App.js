@@ -37,7 +37,9 @@ function App() {
       {({values, errors, resetForm}) => {
         return (
           <>
-            <header className="sr-only">Interactive card details</header>
+            <header className="sr-only">
+              <h1>Interactive card details</h1>
+            </header>
             <main>
               <div
                 style={{fontFamily: "Space Grotesk, sans-serif"}}
